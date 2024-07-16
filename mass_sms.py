@@ -17,7 +17,7 @@ task_queue = Queue("sms_queue", connection = redis_conn, exc_handler = retry_han
 # connection = mysql.connector.connect(
 #     host='localhost',
 #     user='root',
-#     password='Priti_1234',
+#     password='****',
 #     database='satsangdb'
 # )
 
@@ -34,10 +34,10 @@ task_queue = Queue("sms_queue", connection = redis_conn, exc_handler = retry_han
 # print(df.head())
 
 ## Read data from a csv file
-df = pd.read_csv('/mnt/c/Python_WSL/FW_WB_JUNE_DATA.csv')
-df.drop(columns = ['mem_guardian_name', 'mem_ritwiki_name', 'fw_updated_by', 'mem_address_permanent', 'mem_perm_pin'], inplace = True)
-df = df.loc[:, ['mem_full_name', 'mem_key']]
-print(df.head())
+# df = pd.read_csv('/mnt/c/Python_WSL/FW_WB_JUNE_DATA.csv')
+# df.drop(columns = ['mem_guardian_name', 'mem_ritwiki_name', 'fw_updated_by', 'mem_address_permanent', 'mem_perm_pin'], inplace = True)
+# df = df.loc[:, ['mem_full_name', 'mem_key']]
+# print(df.head())
 
 
         
