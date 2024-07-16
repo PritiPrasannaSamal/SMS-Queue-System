@@ -12,7 +12,7 @@ Update the package list and install python
 sudo apt update
 sudo apt install python3 python3-venv python3-pip
 ```
-put the required libraries in requirement.txt file
+put the required libraries(pandas, mysql-connector-python, flask, redis, rq, requests) in requirement.txt file
 ```sh
 pip install -r requirements.txt
 ```
@@ -39,16 +39,18 @@ systemctl status redis-server
 ## Running the Project
 ### Starting the flask application
 ```sh
-python3 App.py
+python3 App.py  # Main Flask application
 ```
 ### Running the RQ worker
 ```sh
-python3 worker.py
+python3 worker.py  # RQ worker script
 ```
 ### Running the Mass SMS Script
 ```sh
-python3 mass_sms.py
+python3 mass_sms.py  # Script to enqueue SMS jobs
 ```
+
+Details functionalities of the code is written inside the .py files in comments.
 
 
 
