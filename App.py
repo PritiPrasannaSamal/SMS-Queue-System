@@ -1,3 +1,6 @@
+## This API is only to check the MASS SMS QUEUE SYSTEM is working properly or not.
+## You can use your SMS Gateway API inplace of this.
+
 from flask import Flask, request, jsonify
 import random
 
