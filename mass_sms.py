@@ -18,7 +18,7 @@ task_queue = Queue("sms_queue", connection = redis_conn, exc_handler = retry_han
 #     host='localhost',
 #     user='root',
 #     password='****',
-#     database='satsangdb'
+#     database='databasename'
 # )
 
 ## fetch the data from database and store it in a DataFrame
